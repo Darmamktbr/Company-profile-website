@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - MIB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="product.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+    background-color: #1e1e1e;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 131px;
+}
+.logo {
+    background-color: #d9d9d9;
+    border-radius: 17px;
+    width: 158px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo img {
+    display: block;
+    width: 101px;
+    height: 58px;
+}
+.main-nav ul {
+    display: flex;
+    gap: 24px;
+}
+.main-nav a {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.main-nav a.active, .main-nav a:hover {
+    background-color: #00b7de;
+}
+.cta-button {
+    background-color: rgba(0, 183, 222, 0.74);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px 24px;
+    border-radius: 18px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #00b7de;
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 20px;
+    }
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* CSS for section section:products */
+.products-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 100px;
+}
+.product-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.product-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.product-details {
+    flex-grow: 1;
+}
+.product-title {
+    background-color: #00b7de;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.product-brands {
+    display: flex;
+    gap: 30px;
+}
+.product-brands ul {
+    list-style-position: inside;
+    list-style-type: '• ';
+}
+.product-brands li {
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .product-details {
+        width: 100%;
+    }
+    .product-brands {
+        justify-content: center;
+        text-align: left;
+    }
+}
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: #1e1e1e;
+}
+.footer-container {
+    display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  height: 56px;
+      padding-left: 40px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-item img {
+    width: 32px;
+    height: 32px;
+}
+.contact-item p {
+    margin: 0;
+    color: #00b7de;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+    }
+}
+  </style>
+  <script src="product.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-container">
+        <a  class="logo">
+            <img src="productimage/Logo.png" alt="MIB Logo">
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="homepage.html">BERANDA</a></li>
+                <li><a href="aboutme.html">ABOUT US</a></li>
+                <li><a href="visimisi.html">VISI MISI</a></li>
+                <li><a href="service.html">SERVICES</a></li>
+                <li><a href="#" class="active">OUR PRODUCTS</a></li>
+            </ul>
+        </nav>
+        <a href="contact.html" class="cta-button">HUBUNGI SEKARANG</a>
+    </div>
+</header>
+<main id="products" class="products-section">
+    <div class="container">
+        <div class="products-grid">
+            <article class="product-card">
+                <img src="productimage/gambar1.png" alt="Server & Storage" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Server & Storage</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Lenovo</li>
+                            <li>Dell</li>
+                            <li>Technologies</li>
+                            <li>HPE</li>
+                            <li>Cisco</li>
+                            <li>Fujitsu</li>
+                            <li>Huawei</li>
+                            <li>IBM</li>
+                            <li>Intel</li>
+                            <li>NetAPP</li>
+                            <li>Nutanix</li>
+                        </ul>
+                        <ul>
+                            <li>Supermicro</li>
+                            <li>Synology</li>
+                            <li>Qnap</li>
+                            <li>Acer</li>
+                            <li>Asustor</li>
+                            <li>Hitachi</li>
+                            <li>Zoan</li>
+                            <li>Sangfor</li>
+                            <li>Asus</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar7.png" alt="Network & Security" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Network & Security</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Cisco</li>
+                            <li>Aruba</li>
+                            <li>Baracuda</li>
+                            <li>Solarwind</li>
+                            <li>AristaRuckus</li>
+                            <li>Huawei</li>
+                            <li>Opentext</li>
+                            <li>Infoblok</li>
+                            <li>IBM</li>
+                        </ul>
+                        <ul>
+                            <li>Tp Link</li>
+                            <li>Dlink</li>
+                            <li>Juniper</li>
+                            <li>Ruijie</li>
+                            <li>Fortigate</li>
+                            <li>HPE</li>
+                            <li>Networking</li>
+                            <li>Netgear</li>
+                            <li>Ubiquity</li>
+                        </ul>
+                        <ul>
+                            <li>Mikrotik</li>
+                            <li>Versa</li>
+                            <li>NeworkSonic</li>
+                            <li>Wall</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar2.png" alt="Video Surveillance" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Video Intelligent Surveillance & Security system Collaboration</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Axis</li>
+                            <li>Bosch</li>
+                            <li>HIkVision</li>
+                            <li>Dahua Hanwa</li>
+                        </ul>
+                        <ul>
+                            <li>TpLink</li>
+                            <li>Huawei</li>
+                            <li>Vivotek</li>
+                            <li>Hilstone</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar8.png" alt="Audio Visual & Teleconfrerance" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Audio Visual & Teleconfrerance</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Logitech</li>
+                            <li>Aver</li>
+                            <li>Polycom</li>
+                            <li>Yelink</li>
+                        </ul>
+                        <ul>
+                            <li>Maxhub</li>
+                            <li>Hisense</li>
+                            <li>Acer</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar3.png" alt="UPS Rack & Cooling" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">UPS Rack & Cooling</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>APC</li>
+                            <li>Vertiv</li>
+                            <li>Eaton</li>
+                            <li>Ica</li>
+                            <li>Prolink</li>
+                            <li>Laplace</li>
+                        </ul>
+                        <ul>
+                            <li>Delta</li>
+                            <li>Socomec</li>
+                            <li>Legrand</li>
+                            <li>Arakawa</li>
+                            <li>Indorack</li>
+                            <li>Vektor</li>
+                            <li>Acer</li>
+                            <li>Altos</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar9.png" alt="Cloud" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Cloud</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Microsoft Azure</li>
+                            <li>AWS</li>
+                            <li>Google</li>
+                        </ul>
+                        <ul>
+                            <li>Wasabi</li>
+                            <li>Alibaba</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar4.png" alt="Firewall & Endpoint Protection" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Next-Generation Firewall & Endpoint Protection</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Fotigate</li>
+                            <li>Sophos</li>
+                            <li>Sangfor</li>
+                            <li>PaloAlto</li>
+                            <li>ChekPoint</li>
+                            <li>ForcePoint</li>
+                            <li>Trend Micro</li>
+                            <li>Crowdstrike</li>
+                            <li>SonicWall</li>
+                        </ul>
+                        <ul>
+                            <li>ESET</li>
+                            <li>Kaspersky</li>
+                            <li>McAfee</li>
+                            <li>WatchGuard</li>
+                            <li>ESET</li>
+                            <li>Kaspersky</li>
+                            <li>McAfee</li>
+                            <li>WatchGuard</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar10.png" alt="PC & Notebook" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">PC & Notebook</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Dell</li>
+                            <li>HP</li>
+                            <li>Lenovo</li>
+                            <li>Acer</li>
+                            <li>MSI</li>
+                            <li>Zyrex</li>
+                        </ul>
+                        <ul>
+                            <li>NUC</li>
+                            <li>Apple</li>
+                            <li>Advance</li>
+                            <li>Asus</li>
+                            <li>Axioo</li>
+                            <li>Renier</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar5.png" alt="Akses door" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Akses door</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Suprema</li>
+                            <li>Solution</li>
+                            <li>ZKTeco</li>
+                            <li>HikVision</li>
+                        </ul>
+                        <ul>
+                            <li>Fingersport</li>
+                            <li>Mugen</li>
+                            <li>Soyal</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar11.png" alt="Virtualization" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Virtualization</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Microsoft Hyper-V</li>
+                            <li>VM Ware</li>
+                            <li>Proxmox Enterprice</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="product-card">
+                <img src="productimage/gambar6.png" alt="Backup & Data Protection" class="product-image">
+                <div class="product-details">
+                    <h2 class="product-title">Backup & Data Protection</h2>
+                    <div class="product-brands">
+                        <ul>
+                            <li>Veeam</li>
+                            <li>Veritas</li>
+                            <li>Acronis</li>
+                        </ul>
+                        <ul>
+                            <li>Rubrik</li>
+                            <li>Opentext</li>
+                            <li>FalconStor</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container footer-container">
+        <div class="contact-item">
+            <img src="productimage/telepon.png" alt="Phone icon">
+            <p>089677189010</p>
+        </div>
+        <div class="contact-item">
+            <img src="productimage/email.png" alt="Email icon">
+            <p>mib@mustikainovasi.com</p>
+        </div>
+        <div class="contact-item">
+            <img src="productimage/lokasi.png" alt="Location icon">
+            <p>Surabaya, Jawa Timur Indonesia</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

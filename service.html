@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="service.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.site-header {
+    background-color: #1e1e1e;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 131px;
+}
+ .logo {
+    background-color: #d9d9d9;
+    border-radius: 17px;
+    width: 158px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo img {
+    display: block;
+    width: 101px;
+    height: 58px;
+}
+.main-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+  .main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-nav a {
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+.main-nav a.active
+ {
+    background-color: var(--primary-color);
+}
+.main-nav li:not(.active) a:hover {
+    background-color: var(--primary-color);
+}
+
+  .cta-button {
+    background-color: rgba(0, 183, 222, 0.74);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 18px;
+
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #00b7de;
+  }
+
+  @media (max-width: 1200px) {
+    .header-container {
+      flex-direction: column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main-nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+  .main-nav {
+        order: 3;
+        width: 100%;
+    }
+    .cta-button {
+      width: 100%;
+    }
+  }
+
+/* CSS for section section:services */
+.services-section {
+    padding-top: 98px;
+    padding-bottom: 113px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px 73px;
+  }
+
+  .service-card {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 16px;
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.61);
+    color: #082e37;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card-icon {
+    width: 49px;
+    height: auto;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    color: #082e37;
+  }
+
+  .card-body p,
+  .card-body ul {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  .card-body p {
+    margin-bottom: 1em;
+  }
+
+  .card-body ul {
+    padding-left: 20px;
+    margin-top: 1em;
+  }
+
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .services-section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: #1e1e1e;
+  }
+
+  .footer-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  height: 56px;
+  padding-left: 40px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .contact-link,
+  .contact-text {
+    color: #00b7de;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+    }
+  }
+  </style>
+  <script src="service.js" defer></script>
+</head>
+<body>
+<header id="header" class="site-header">
+  <div class="container header-container">
+    <a  class="logo">
+      <!--merged image-->
+      <div style="position: relative; width: 158px; height: 76px;">
+        <div style="position: absolute; top: 0; left: 0; width: 158px; height: 76px; background-color: #d9d9d9; border-radius: 17px;"></div>
+        <img src="serviceimage/logo.png" alt="MB Logo" style="position: absolute; top: 9px; left: 29px; width: 101px; height: 58px; object-fit: cover;">
+      </div>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="homepage.html">BERANDA</a></li>
+        <li><a href="aboutme.html">ABOUT US</a></li>
+        <li><a href="visimisi.html">VISI MISI</a></li>
+        <li><a class= "active">SERVICES</a></li>
+        <li><a href="product.html">OUR PRODUCTS</a></li>
+      </ul>
+    </nav>
+    <a href="contact.html" class="cta-button">HUBUNGI SEKARANG</a>
+  </div>
+</header>
+<main id="services" class="services-section">
+  <div class="container">
+    <div class="services-grid">
+      <article class="service-card">
+        <header class="card-header">
+          <img src="serviceimage/org.svg" alt="Consultation Icon" class="card-icon">
+          <h3 class="card-title">KONSULTASI IT</h3>
+        </header>
+        <div class="card-body">
+          <p>Kami membantu perusahaan dalam merencanakan dan melaksanakan strategi transformasi digital untuk meningkatkan efisiensi dan daya saing seperti:</p>
+          <ul>
+            <li>Menganalisis kebutuhan unit bisnis</li>
+            <li>Merancang solusi IT</li>
+            <li>implementasikan solusi IT</li>
+            <li>Memberikan support</li>
+            <li>Evaluasi dan perbaikan</li>
+            <li>mengikuti teknologi yang selalau berkembang</li>
+          </ul>
+        </div>
+      </article>
+      <article class="service-card">
+        <header class="card-header">
+          <img src="serviceimage/set.svg" alt="Integration Icon" class="card-icon">
+          <h3 class="card-title">INTEGRASI SISTEM DAN DATA</h3>
+        </header>
+        <div class="card-body">
+          <p>Layanan kami memastikan bahwa berbagai aplikasi dan system dapat beroperasi secara harmonis, serta mengelola dan mengintegrasikan data dari berbagai sumber, meliputi:</p>
+          <ul>
+            <li>Integrasi Data</li>
+            <li>Peningkatan Efisiensi dalam system</li>
+            <li>Integrasi Aplikasi</li>
+            <li>Peningkatan Kolaborasi atara Department</li>
+            <li>Penyimpanan Cloud</li>
+            <li>Migrasi ke Cloud</li>
+          </ul>
+        </div>
+      </article>
+      <article class="service-card">
+        <header class="card-header">
+          <img src="serviceimage/sec.svg" alt="Security Icon" class="card-icon">
+          <h3 class="card-title">KEAMANAN SIBER YANG KUAT</h3>
+        </header>
+        <div class="card-body">
+          <p>Kami menyediakan audit keamanan dan solusi perlindungan untuk menjaga data dan system klien dari ancaman siber.</p>
+          <ul>
+            <li>Audit Keamanan</li>
+            <li>Solusi Keamanan</li>
+            <li>Mencegah kerugian yang bersifat finansial</li>
+            <li>Menjaga kelangsungan bisnis teteap berjalan</li>
+          </ul>
+        </div>
+      </article>
+      <article class="service-card">
+        <header class="card-header">
+          <img src="serviceimage/ctg.svg" alt="Support Icon" class="card-icon">
+          <h3 class="card-title">DUKUNGAN DAN PEMELIHARAAN BERKELANJUTAN</h3>
+        </header>
+        <div class="card-body">
+          <p>Tim kami siap memberikan dukungan teknis dan pemeliharaan system untuk memastikan kegiatan operasional yang lancar dan optimal.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+<footer id="footer" class="site-footer">
+  <div class="container footer-container">
+    <div class="contact-item">
+      <img src="serviceimage/telepon.png" alt="Phone Icon" class="contact-icon">
+      <a href="tel:089677189010" class="contact-link">089677189010</a>
+    </div>
+    <div class="contact-item">
+      <img src="serviceimage/Email.png" alt="Email Icon" class="contact-icon">
+      <a href="mailto:mib@mustikainovasi.com" class="contact-link">mib@mustikainovasi.com</a>
+    </div>
+    <div class="contact-item">
+      <img src="serviceimage/lokasi.png" alt="Location Icon" class="contact-icon">
+      <span class="contact-text">Surabaya, Jawa Timur Indonesia</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

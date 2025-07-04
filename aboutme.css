@@ -1,0 +1,41 @@
+:root {
+  --primary-color: #00b7de;
+  --dark-bg: #1e1e1e;
+  --light-text: #ffffff;
+  --dark-text: #1e1e1e;
+  --button-bg: rgba(0, 183, 222, 0.74);
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #ffffff;
+  color: var(--dark-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

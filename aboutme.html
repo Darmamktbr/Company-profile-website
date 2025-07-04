@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Mustika Inovasi Bersama</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="aboutme.css">
+  <style id="sections-styles">
+/* CSS for section section:header */
+.header-section {
+  background-color: var(--dark-bg);
+}
+.header-container {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 131px;
+}
+.logo {
+    background-color: #d9d9d9;
+    border-radius: 17px;
+    width: 158px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.logo-image {
+display: block;
+    width: 101px;
+    height: 58px;
+}
+.main-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.main-navigation a {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--light-text);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+.main-navigation a.active,
+.main-navigation a:hover {
+  background-color: var(--primary-color);
+}
+.cta-button {
+   background-color: rgba(0, 183, 222, 0.74);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 13px 24px;
+    border-radius: 18px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 1200px) {
+  .header-container {
+    flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 20px;
+  }
+  .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+
+
+/* CSS for section section:about */
+.about-section {
+  padding: 109px 0 80px;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 87px;
+  padding: 0 88px 0 88px;
+}
+.about-image-wrapper {
+  flex: 0 0 499px;
+  min-width: 0;
+}
+.about-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.about-content-wrapper {
+  flex: 1;
+  min-width: 0;
+  padding-top: 61px; /* (301 - 240) to align with visual start */
+}
+.about-text h1 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.3;
+  margin: 0 0 4px 0;
+}
+.about-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: justify;
+  margin: 0;
+}
+.company-values {
+  margin-top: 55px;
+}
+.value-block {
+  margin-top: 39px;
+}
+.value-block:first-child {
+  margin-top: 0;
+}
+.value-block h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  margin: 0 0 4px 0;
+}
+.value-block p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    padding: 0 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-content-wrapper {
+    padding-top: 0;
+    width: 100%;
+  }
+  .about-text h1, .value-block h2 {
+    text-align: center;
+  }
+  .about-text p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 0;
+    }
+    .about-container {
+        padding: 0 20px;
+    }
+    .about-text h1 {
+        font-size: 36px;
+    }
+    .value-block h2 {
+        font-size: 28px;
+    }
+}
+
+/* CSS for section section:footer */
+.footer-section {
+  background-color: var(--dark-bg);
+}
+.footer-container {
+ display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  height: 56px;
+      padding-left: 40px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contact-item img {
+  width: 32px;
+  height: 32px;
+}
+.contact-item span {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    gap: 15px;
+  }
+}
+  </style>
+  <script src="aboutme.js" defer></script>
+</head>
+<body>
+<header class="header-section">
+    <div class="container header-container">
+      <a class="logo">
+        <div style="position: relative; width: 158px; height: 76px;">
+        <div style="position: absolute; top: 0; left: 0; width: 158px; height: 76px; background-color: #d9d9d9; border-radius: 17px;"></div>
+        <img src="aboutmeimage/logo.png" alt="MB Logo" style="position: absolute; top: 9px; left: 29px; width: 101px; height: 58px; object-fit: cover;">
+      </div>
+      </a>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="homepage.html">BERANDA</a></li>
+          <li><a class="active">ABOUT US</a></li>
+          <li><a href="visimisi.html">VISI MISI</a></li>
+          <li><a href="service.html">SERVICES</a></li>
+          <li><a href="product.html">OUR PRODUCTS</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="cta-button">HUBUNGI SEKARANG</a>
+    </div>
+  </div>
+</header>
+<main id="section-about" class="about-section">
+  <div class="page-wrapper">
+    <div class="about-container">
+      <div class="about-image-wrapper">
+        <img src="aboutmeimage/Bisnis.png" alt="Business team meeting and shaking hands">
+      </div>
+      <div class="about-content-wrapper">
+        <article class="about-text">
+          <h1>TENTANG KAMI</h1>
+          <p>PT Mustika Inovasi Bersama adalah perusahaan IT Solution yang didirikan dengan komitmen untuk menyediakan solusi teknologi inovatif di berbagai sektor industri, dan government tim kami terdiri dari professional berpengalaman yang memiliki visi & misi yang kuat dan jelas untuk membantu klien bertransformasi dalam era digital yang terus berkembang. PT Mustika Inovasi Bersama bergerak di bidang IT Solution yang menyediakan hardware maupun software serta perangkat keamanan. Perusahaan ini resmi berdiri dihadapan Notaris Ophie Rosaria Hidayat,S.H., M.Kn. Pengesahan dari Kementerian Hukum dan HAM, menegaskan legalitas dan komitmen kami dalam menyediakan layanan solusi IT yang berkualitas & berintregritas. Berdomisili di Kota Surabaya, Jawa Timur, PT Mustika Inovasi Bersama siap membantu Anda mencapai tujuan dalam mengembangkan bisnis melalui solusi teknologi yang tepat dan relevan. kami berkomitmen untuk menjadi mitra yang mendukung perjalanan transformasi digital anda dengan kolaborasi yang produktif untuk mencapai tujuan yang di inginkan.</p>
+        </article>
+        <div class="company-values">
+          <div class="value-block">
+            <h2>COMPANY VISION</h2>
+            <p>innovation technology solutions</p>
+          </div>
+          <div class="value-block">
+            <h2>COMPANY VALUE</h2>
+            <p>Team Work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer id="section-footer" class="footer-section">
+  <div class="page-wrapper">
+    <div class="footer-container">
+      <div class="contact-item">
+        <img src="aboutmeimage/Telepon.png" alt="Phone Icon">
+        <span>089677189010</span>
+      </div>
+      <div class="contact-item">
+        <img src="aboutmeimage/Email.png" alt="Email Icon">
+        <span>mib@mustikainovasi.com</span>
+      </div>
+      <div class="contact-item">
+        <img src="aboutmeimage/lokasi.png" alt="Location Icon">
+        <span>Surabaya, Jawa Timur Indonesia</span>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
